@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAE DMA — قادمون قريباً</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #000;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: #d4af37;
+            position: relative;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('mylogo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -2;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 800px;
+            width: 90%;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .logo {
+            width: 280px;
+            margin-bottom: 25px;
+            filter: drop-shadow(0 0 10px rgba(212,175,55,0.7));
+        }
+
+        .title {
+            font-size: 56px;
+            font-weight: bold;
+            color: #d4af37;
+            text-shadow: 0 0 18px rgba(212,175,55,0.9);
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            margin-top: 10px;
+            color: #fff;
+            opacity: 0.85;
+            margin-bottom: 20px;
+        }
+
+        .line {
+            width: 250px;
+            height: 3px;
+            background: #d4af37;
+            margin: 20px auto;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(212,175,55,0.7);
+        }
+
+        .coming-text {
+            font-size: 32px;
+            margin-top: 20px;
+            color: #d4af37;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(212,175,55,0.7);
+        }
+
+        .buttons {
+            margin-top: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin: 8px;
+            background: #d4af37;
+            color: #000;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #f0d675;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212,175,55,0.4);
+        }
+
+    
+        \\
+        @media (max-width: 768px) {
+            .title {
+                font-size: 42px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            .coming-text {
+                font-size: 26px;
+            }
+            
+            .logo {
+                width: 200px;
+            }
+            
+            .btn {
+                padding: 10px 18px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 32px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+            
+            .coming-text {
+                font-size: 22px;
+            }
+            
+            .logo {
+                width: 160px;
+            }
+            
+            .btn {
+                display: block;
+                margin: 8px auto;
+                width: 80%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="overlay"></div>
+
+    <div class="container">
+        
+          <img src="mylogo.png" alt="UAE DMA Logo" class="logo"> 
+        
+        <div class="title">UAE DMA</div>
+        <div class="line"></div>
+        <div class="subtitle">نحن نعمل على إطلاق متجرنا الرسمي قريباً جداً</div>
+        
+        <div class="coming-text">نحن قادمون</div>
+        
+        <div class="buttons">
+            <a href="https://wa.me/971553927346" class="btn">تواصل واتساب</a>
+            <a href="https://discord.gg/uaedma" class="btn">سيرفر الديسكورد</a>
+        </div>
+    </div>
+</body>
+</html>
